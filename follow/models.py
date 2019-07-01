@@ -1,3 +1,6 @@
 from django.db import models
 
-# Create your models here.
+class Follow(models.Model):
+    uid=models.IntegerField()
+    fid=models.IntegerField()
+    time=models.DataTimeField(auto_now_add=True) 
