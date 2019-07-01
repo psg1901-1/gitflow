@@ -1,3 +1,6 @@
 from django.shortcuts import render
 
-# Create your views here.
+def follow(request):
+    return render(request,'follow.html',{})
+def unfollow(request):
+    return render(request,'unfollow.html',{})
